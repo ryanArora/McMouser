@@ -19,10 +19,10 @@ public class CoreMod implements IFMLLoadingPlugin {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public CoreMod() {
-        if (!System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("mac")) {
-            LOGGER.info("Not running on macOS, disabling");
-            return;
-        }
+        // if (!System.getProperty("os.name").toLowerCase(Locale.ROOT).contains("mac")) {
+        //     LOGGER.info("Not running on macOS, disabling");
+        //     return;
+        // }
         try {
             File tempDir = Files.createTempDirectory("mcmouser").toFile();
             tempDir.deleteOnExit();
